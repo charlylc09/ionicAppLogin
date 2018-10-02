@@ -1,5 +1,9 @@
-import { HttpClient } from '@angular/common/http';
+//import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+
+//IMPORTACIONES ADMsys
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
 
 /*
   Generated class for the AuthProvider provider.
@@ -10,7 +14,7 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class AuthProvider {
 
-  constructor(public http: HttpClient) {
+  constructor(private afAuth :  AngularFireAuth) {
     console.log('Hello AuthProvider Provider');
   }
 
