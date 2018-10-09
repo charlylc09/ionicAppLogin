@@ -8,7 +8,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 
-import {LoginPage} from '../pages/login/login';
+import { LoginPage } from '../pages/login/login';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,11 +21,12 @@ import { AngularFireAuthModule } from 'angularfire2/auth';
 
 //VARIABLE DE CONEXION A FIREBASE
 export const firebaseConfig = {
-  apiKey: "xxxxxxxxxx",
-  authDomain: "your-domain-name.firebaseapp.com",
-  databaseURL: "https://your-domain-name.firebaseio.com",
-  storageBucket: "your-domain-name.appspot.com",
-  messagingSenderId: '<your-messaging-sender-id>'
+  apiKey: "AIzaSyC7fdVqnmiPigthyAuwplR2Hg7Xxx3lfeA",
+  authDomain: "sisa-6e66a.firebaseapp.com",
+  databaseURL: "https://sisa-6e66a.firebaseio.com",
+  projectId: "sisa-6e66a",
+  storageBucket: "sisa-6e66a.appspot.com",
+  messagingSenderId: "825835017977"
 };
 
 @NgModule({
@@ -56,8 +57,8 @@ export const firebaseConfig = {
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     AuthProvider
   ]
 })
-export class AppModule {}
+export class AppModule { }
